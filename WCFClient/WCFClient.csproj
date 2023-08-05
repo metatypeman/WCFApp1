@@ -7,8 +7,21 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="NLog" Version="5.2.2" />
+		<PackageReference Include="System.ServiceModel.NetNamedPipe" Version="6.0.0" />
+		<PackageReference Include="System.ServiceModel.Primitives" Version="6.0.0" />
+	</ItemGroup>
+	
   <ItemGroup>
     <ProjectReference Include="..\WCFContract\WCFContract.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Update="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
